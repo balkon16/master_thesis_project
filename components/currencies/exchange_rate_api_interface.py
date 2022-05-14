@@ -11,7 +11,7 @@ class ExchangeRateAPIInterface(metaclass=abc.ABCMeta):
         "get_exchange_rate"
     }
 
-    # TODO: check if a method in a subclass has the same signature
+    # TODO (low): check if a method in a subclass has the same signature
     @classmethod
     def __subclasscheck__(cls, subclass):
         if NotImplemented:
